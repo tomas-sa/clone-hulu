@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font-color: #f1f1f1
+    --background-color: grey
+}
+.nav__list{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav__item{
+    text-decoration: none;
+}
+.nav__item--img{
+    width: 100px;
+}
+.primary-section{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.secondary-section{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+.hori-card__img{
+    width: 200px;
+}
