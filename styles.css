@@ -43,10 +43,12 @@
 .primary-section{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
 }
 .secondary-section{
     display: grid;
     grid-template-columns: repeat(6,1fr);
+    gap: 10px;
 }
 .card{
     height: 25rem;
@@ -65,7 +67,7 @@
     color: black;
 }
 .card__title{
-    font-size: var(--header-size);
+    font-size: 4ch;
 }
 .card__para--bold{
     font-weight: bold;
@@ -148,5 +150,82 @@
     }
     to{
         opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 1555px) {
+    .card{
+        width: 12rem;
+        height: 18rem;
+        gap: 5px;
+    }
+    .card__title{
+        font-size: 3ch;
+    }
+    .card__para{
+        font-size: 1.5ch;
+    }
+        .hori-card__img {
+            width: 150px;
+            height: 80px;
+        }
+}
+@media only screen and (max-width: 1090px) {
+    .card {
+        width: 8rem;
+        height: 12rem;
+        gap: 2px;
+    }
+
+    .card__title {
+        font-size: 2ch;
+    }
+
+    .card__para {
+        font-size: 1ch;
+    }
+
+    .hori-card__img {
+        width: 100px;
+        height: 50px;
+    }
+    .hori-card__para{
+        font-size: 1ch;
+    }
+    .hori-card__para--bold{
+        font-size: 1.3ch;
+    }
+    .nav__list{
+        font-size: 1.2ch;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .primary-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .secondary-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 20rem;
+        height: 27rem;
+        gap: 5px;
+    }
+
+    .card__title {
+        font-size: 5ch;
+    }
+
+    .card__para {
+        font-size: 2.3ch;
+    }
+
+    .hori-card__img {
+        width: 150px;
+        height: 80px;
     }
 }
